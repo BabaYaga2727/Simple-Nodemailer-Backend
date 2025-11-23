@@ -8,7 +8,9 @@ const cors = require("cors")
 const app = express();
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin: "https://simple-nodemailer-frontend-f9xv.vercel.app/"
+}))
 
 
 app.get('/', async(req, res)=>{
