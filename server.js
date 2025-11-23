@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://simple-nodemailer-frontend-f9xv.vercel.app/",
+    origin: "https://simple-nodemailer-frontend-f9xv.vercel.app",
     methods: ["GET", "POST"]
 }))
 
